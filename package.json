@@ -4,12 +4,12 @@
   "description": "webpack react development",
   "main": "index.js",
   "scripts": {
-    "build":"webpack",
-    "dev":"webpack-dev-server"
+    "build": "webpack",
+    "dev": "webpack-dev-server"
   },
   "author": "postbird <ptbird@yeah.net> (http://www.ptbird.cn/)",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "autoprefixer": "^7.1.5",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -32,5 +32,6 @@
     "url-loader": "^0.6.2",
     "webpack": "^3.7.1",
     "webpack-dev-server": "^2.9.2"
-  }
+  },
+  "devDependencies": {}
 }
