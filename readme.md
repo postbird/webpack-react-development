@@ -8,7 +8,7 @@
 
 最近入坑`react`
 
-由于`react`的`create-react-app`本身不是使用webpack`，而也不像`vue`给了一个非常好用的`vue-cli`
+由于`react`的`create-react-app`本身不是使用`webpack`，而也不像`vue`给了一个非常好用的`vue-cli`
 
 所以在使用`webpack`构建`react`的开发环境的时候遇到了很多问题。
 
@@ -212,7 +212,7 @@ module.exports = {
         // new HtmlWebpackPlugin(),
         new extractTextPlugin("/css/index.css")
     ],
-    // webpack-dev-server 
+    // webpack-dev-server
     devServer: {
         //设置基本目录结构
         contentBase: path.resolve(__dirname, 'dist'),
