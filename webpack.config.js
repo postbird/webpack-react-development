@@ -31,15 +31,15 @@ module.exports = {
                 ]
             },
             // css处理不进行分离
-            // { test: /\.css$/, use: ['style-loader', 'css-loader'] },
+            { test: /\.css$/, use: ['style-loader', 'css-loader'] },
             // css编译 单独分离出css文件
-            {
-                test: /\.css$/,
-                use: extractTextPlugin.extract({
-                    fallback: "style-loader",
-                    use: ["css-loader","postcss-loader"]
-                })
-            },
+            // {
+            //     test: /\.css$/,
+            //     use: extractTextPlugin.extract({
+            //         fallback: "style-loader",
+            //         use: ["css-loader","postcss-loader"]
+            //     })
+            // },
             // 图片处理
             {
                 test: /\.(png|jpg|jpeg|gif|webp|svg)$/,
@@ -55,23 +55,23 @@ module.exports = {
             {
                 test: /\.less$/,
                 // 不分离编译的css文件
-                // use:['style-loader',"postcss-loader",'css-loader','less-loader']
+                use:['style-loader',"postcss-loader",'css-loader','less-loader']
                 // 分离css文件
-                use: extractTextPlugin.extract({
-                    fallback: "style-loader",
-                    use: ['css-loader',"postcss-loader", 'less-loader']
-                })
+                // use: extractTextPlugin.extract({
+                //     fallback: "style-loader",
+                //     use: ['css-loader',"postcss-loader", 'less-loader']
+                // })
             },
             // scss 编译
             {
                 test:/\.scss$/,
                 // 编译scss 不分离文件
-                // use:['style-loader',"postcss-loader",'css-loader','sass-loader']
+                use:['style-loader',"postcss-loader",'css-loader','sass-loader']
                 // 分离css文件
-                use:extractTextPlugin.extract({
-                    fallback:'style-loader',
-                    use:['css-loader',"postcss-loader",'sass-loader']
-                })
+                // use:extractTextPlugin.extract({
+                //     fallback:'style-loader',
+                //     use:['css-loader',"postcss-loader",'sass-loader']
+                // })
             },
         ]
     },
