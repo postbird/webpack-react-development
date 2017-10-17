@@ -232,5 +232,9 @@ module.exports = {
 
 我把代码放在了`github`上，可以`git clone`查看源码，直接应用。
 
+地址：
+- https://github.com/postbird/webpack-react-development
 
-  [1]: ./src/images/logo.svg
+## 五、本文最早发布于博文：
+
+- http://www.ptbird.cn/webpack3-react-development.html
