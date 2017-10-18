@@ -1,6 +1,6 @@
 {
   "name": "@ptbird/webpack3-react-development",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "webpack3 react development",
   "main": "index.js",
   "scripts": {
