@@ -69,14 +69,3 @@ npm install
 
 - http://www.ptbird.cn/webpack3-react-development.html
 
-## 六、publish到了npmjs上，使用更方便
-
-地址：
-
-- https://www.npmjs.com/package/@ptbird/webpack3-react-development
-
-安装：
-
-```bash
-npm install @ptbird/webpack3-react-development --save
-```
