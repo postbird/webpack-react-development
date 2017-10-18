@@ -1,12 +1,16 @@
 {
-  "name": "webpack-react",
-  "version": "1.0.0",
-  "description": "webpack react development",
+  "name": "@ptbird/webpack3-react-development",
+  "version": "0.0.1",
+  "description": "webpack3 react development",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
     "dev": "webpack-dev-server"
   },
+  "registory": "https://github.com/postbird/webpack-react-development",
+  "keywords": [
+    "webpack3","webpack","react","react16"
+  ],
   "author": "postbird <ptbird@yeah.net> (http://www.ptbird.cn/)",
   "license": "MIT",
   "dependencies": {
@@ -33,5 +37,9 @@
     "webpack": "^3.7.1",
     "webpack-dev-server": "^2.9.2"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/postbird/webpack-react-development.git"
+  }
 }
