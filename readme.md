@@ -69,3 +69,7 @@ npm install
 
 - http://www.ptbird.cn/webpack3-react-development.html
 
+## 六、更新记录：
+
+- 2017-10-20 
+  - 修改基本的结构，通过与入口文件`main.js`同级的`App.jsx`引入其他组件
