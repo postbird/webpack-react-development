@@ -73,3 +73,5 @@ npm install
 
 - 2017-10-20 
   - 修改基本的结构，通过与入口文件`main.js`同级的`App.jsx`引入其他组件
+- 2017-10-21
+  - 修复`webpack`中`postcss-loader`的错误配置导致无法编译 less/sass 的问题

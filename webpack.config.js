@@ -31,7 +31,7 @@ module.exports = {
                 ]
             },
             // css处理不进行分离
-            { test: /\.css$/, use: ['style-loader', 'css-loader'] },
+            { test: /\.css$/, use: ['style-loader', 'css-loader', "postcss-loader"] },
             // css编译 单独分离出css文件
             // {
             //     test: /\.css$/,
@@ -55,7 +55,7 @@ module.exports = {
             {
                 test: /\.less$/,
                 // 不分离编译的css文件
-                use:['style-loader',"postcss-loader",'css-loader','less-loader']
+                use: ['style-loader', 'css-loader', "postcss-loader", 'less-loader']
                 // 分离css文件
                 // use: extractTextPlugin.extract({
                 //     fallback: "style-loader",
@@ -64,9 +64,9 @@ module.exports = {
             },
             // scss 编译
             {
-                test:/\.scss$/,
+                test: /\.scss$/,
                 // 编译scss 不分离文件
-                use:['style-loader',"postcss-loader",'css-loader','sass-loader']
+                use: ['style-loader', 'css-loader', "postcss-loader", 'sass-loader']
                 // 分离css文件
                 // use:extractTextPlugin.extract({
                 //     fallback:'style-loader',
