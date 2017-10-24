@@ -92,6 +92,7 @@ module.exports = {
         //配置服务端口号
         port: 8080,
         // 实时刷新
-        inline: true
+        inline: true,
+        open: 'http://127.0.0.1:8080'
     }
 }
