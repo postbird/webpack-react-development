@@ -78,8 +78,11 @@ module.exports = {
     // 插件
     plugins: [
         // new uglifyjs(),
-        // new HtmlWebpackPlugin(),
-        new extractTextPlugin("/css/index.css")
+        new HtmlWebpackPlugin({
+            title: 'Webpack-React-Development By Postbird',
+            template: 'src/index.html'
+        }),
+        // new extractTextPlugin("/css/index.css")
     ],
     // webpack-dev-server 
     devServer: {

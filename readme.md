@@ -77,3 +77,5 @@ npm install
   - 修复`webpack`中`postcss-loader`的错误配置导致无法编译 less/sass 的问题
 - 2017-10-24
   - 增加`webpack-dev-server`自动打开浏览器`open`配置
+- 2017-10-27
+  - 更改`index.html`生成方式,通过`webpack`插件及`src/index.html`生成`dist/index.html`
