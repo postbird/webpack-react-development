@@ -1,13 +1,17 @@
 const path = require('path');
+const glob = require('glob');
 const uglifyjs = require('uglifyjs-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const extractTextPlugin = require("extract-text-webpack-plugin");
+const PurifyCSSPlugin = require('purifycss-webpack');
 const autoprefixer = require('autoprefixer');
+
 // 公共目录
 const website = {
     publicPath: '/'
 }
 module.exports = {
+    devtool: 'eval-source-map',
     entry: {
         bundle: path.resolve(__dirname, 'src/main.js')
     },
@@ -82,7 +86,13 @@ module.exports = {
             title: 'Webpack-React-Development By Postbird',
             template: 'src/index.html'
         }),
-        // new extractTextPlugin("/css/index.css")
+        // 将css抽离成单个文件
+        // new extractTextPlugin("/css/index.css"),
+        // 清除未使用的css
+        // new PurifyCSSPlugin({
+        //     // 绝对路径
+        //     paths:glob.async(path.join(__dirname,'src/*.html'))
+        // })
     ],
     // webpack-dev-server 
     devServer: {
